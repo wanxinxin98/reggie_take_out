@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.wan.common.R;
 import com.wan.dto.SetmealDto;
-import com.wan.entity.Category;
 import com.wan.entity.Setmeal;
 import com.wan.entity.SetmealDish;
 import com.wan.service.CategoryService;
