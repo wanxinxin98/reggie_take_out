@@ -80,11 +80,11 @@ public class DishServiceImpl extends ServiceImpl<DishMapper, Dish>
         //添加当前提交过来的口味信息---dish_flavor--insert
         //菜品口味
         List<DishFlavor> flavors = dishDto.getFlavors();
-        List<DishFlavor> dishFlavors = flavors.stream().map(dishFlavor -> {
+        flavors = flavors.stream().map(dishFlavor -> {
             dishFlavor.setDishId(dishId);
             return dishFlavor;
         }).collect(Collectors.toList());
-        dishFlavorService.saveBatch(dishFlavors);
+        dishFlavorService.saveBatch(flavors);
     }
 }
 
