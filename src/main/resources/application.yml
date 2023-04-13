@@ -13,7 +13,7 @@ spring:
   redis:
     host: localhost
     port: 6379
-    password: 162121
+#    password: 162121
     jedis:
       #Redis 连接池配置
       pool:
